@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto con Código QR</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/qrious@4.0.2/dist/qrious.min.js"></script>
+</head>
+<body>
+
+    <div class="contact-form">
+        <h2>Formulario de Contacto hecho por Miguel Evangelista 100387597</h2>
+        <input type="text" id="nombre" placeholder="Nombre" required>
+        <input type="text" id="telefono" placeholder="Teléfono" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <button onclick="generarQR()">Enviar</button>
+    </div>
+
+    <div class="qr-container" id="qr-container">
+        <canvas id="qr"></canvas>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
